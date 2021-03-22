@@ -1,4 +1,4 @@
-version: 11
+version: 0
 workspace:
   name: "wacky-env"
   type: "kubernetes"
