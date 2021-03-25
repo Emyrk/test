@@ -1,6 +1,6 @@
 version: 0.1
 workspace:
-  name: "wacky-env"
+  #name: "wacky-env"
   type: "kubernetes"
   spec:
     image: ubuntu
