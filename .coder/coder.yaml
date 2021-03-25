@@ -1,7 +1,7 @@
 version: 0.0
 workspace:
   name: "wacky-env"
-  type: "kubernetes"
+  #type: "kubernetes"
   spec:
     image: ubuntu
     container-based-vm: true
