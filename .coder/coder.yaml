@@ -6,7 +6,7 @@ workspace:
   specs:
     kubernetes:
       image: 
-        value: enterprise-dev
+        value: codercom/enterprise-dev
       container-based-vm: 
         value: true
       cpu: 
