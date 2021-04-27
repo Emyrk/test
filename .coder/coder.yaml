@@ -5,7 +5,7 @@ workspace:
       image: 
         policy: write
       container-based-vm: 
-      	policy: write
+        policy: write
       cpu: 
         policy: write
       memory: 
