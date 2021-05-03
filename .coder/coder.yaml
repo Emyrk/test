@@ -13,3 +13,12 @@ workspace:
   configure:
     start:
       - command: ls
+  devURLs:
+    - name: "coderdoc"
+      scheme: "http"
+      port: 3000
+      access: "org"
+    - name: "devprod"
+      scheme: "http"
+      port: 8080
+      access: "private"
