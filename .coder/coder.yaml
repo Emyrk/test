@@ -27,8 +27,7 @@ workspace:
         - name: "install curl"
           continue-on-error: true
           command: |
-            apt update
-            apt install -y curl
+            ls
         - name: "install Go binary"
           continue-on-error: true
           command: "go install"
