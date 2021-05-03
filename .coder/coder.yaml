@@ -36,6 +36,8 @@ workspace:
           shell: "bash"
           env:
             GOPATH: /home/coder/go
+        - name: "Easy ls"
+          command: ls
   devURLs:
     value:
       - name: MyWebsite
