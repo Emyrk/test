@@ -29,7 +29,6 @@ workspace:
           command: |
             ls
         - name: "install Go binary"
-          continue-on-error: true
           command: "go install"
           directory: /home/coder/go/src/github.com/my-project
           shell: "bash"
