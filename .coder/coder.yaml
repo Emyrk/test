@@ -6,15 +6,15 @@ workspace:
   specs:
     kubernetes:
       image: 
-        value: codercom/enterprise-dev
+        value: ubuntu
       container-based-vm: 
         value: true
       cpu: 
-        value: 4
+        value: 2
       memory: 
-        value: 8
+        value: 2
       disk: 
-        value: 100
+        value: 15
       gpuCount: 
         value: 0
       labels:
@@ -25,10 +25,12 @@ workspace:
     start:
       value:
         - name: "install curl"
+          continue-on-error: true
           command: |
             apt update
             apt install -y curl
         - name: "install Go binary"
+          continue-on-error: true
           command: "go install"
           directory: /home/coder/go/src/github.com/my-project
           shell: "bash"
