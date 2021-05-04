@@ -1,16 +1,55 @@
-version: 0.1
+version: 0.2-testing
 workspace:
-  #name: "wacky-env"
-  type: "kubernetes"
-  spec:
-    image: ubuntu
-    container-based-vm: true
-    cpu: 1.9
-    memory: 2.1
-    disk: 23
-    labels:
-      favorite-color: "blue"
-      language: "english"
+  # Type indicates which provider to use when building the workspace.
+  # It corrosponds to the `kubernetes` section in the `specs` section.
+  type: kubernetes
+  specs:
+    kubernetes:
+      image: 
+        value: ubuntu
+      container-based-vm: 
+        value: true
+      cpu: 
+        value: 1
+      memory: 
+        value: 1
+      disk: 
+        value: 20
+      gpuCount: 
+        value: 0
+      labels:
+        value:
+          com.coder.custom.hello: "hello"
+          com.coder.custom.world: "world"
   configure:
     start:
-      - command: ls
+      value:
+        - name: "install curl"
+          command: |
+            ls
+        - name: "install Go binary"
+          command: "go install"
+          directory: /home/coder/go/src/github.com/my-project
+          shell: "bash"
+          env:
+            GOPATH: /home/coder/go
+        - name: "Easy ls"
+          command: ls
+  devURLs:
+    value:
+      - name: MyWebsite
+        port: 3000
+        scheme: http
+        access: private
+      - name: PublicPort
+        port: 8080
+        scheme: https
+        access: public
+      - name: OrgWebsite
+        port: 3001
+        scheme: http
+        access: org
+      - name: AuthedSite
+        port: 8081
+        scheme: https
+        access: authed
