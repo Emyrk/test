@@ -25,7 +25,6 @@ workspace:
     start:
       value:
         - name: "install curl"
-          continue-on-error: true
           command: |
             ls
         - name: "install Go binary"
