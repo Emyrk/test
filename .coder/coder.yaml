@@ -35,7 +35,7 @@ workspace:
             GOPATH: /home/coder/go
         - name: "Easy ls"
           command: ls
-  devURLs:
+  dev-urls:
     value:
       - name: MyWebsite
         port: 3000
