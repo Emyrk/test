@@ -15,7 +15,7 @@ workspace:
         value: 2
       disk: 
         value: 15
-      gpuCount: 
+      gpu-count: 
         value: 0
       labels:
         value:
