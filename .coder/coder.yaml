@@ -31,7 +31,7 @@ workspace:
           env:
             GOPATH: /home/coder/go
         - name: "Clone Git Project"
-          command: "git@github.com:Emyrk/test.git"
+          command: "git clone git@github.com:Emyrk/test.git"
           continue-on-error: true
           env:
             GOPATH: /home/coder/go
