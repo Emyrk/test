@@ -31,7 +31,7 @@ workspace:
           env:
             GOPATH: /home/coder/go
         - name: "Get github keys"
-          command: ssh-keyscan github.com >> githubKey
+          command: ssh-keyscan -H github.com >> ~/.ssh/known_hosts
         - name: "Clone Git Project"
           command: "git clone git@github.com:Emyrk/test.git"
           continue-on-error: true
