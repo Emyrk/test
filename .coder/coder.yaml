@@ -28,9 +28,13 @@ workspace:
           command: ls
         - name: "Mkdir path to git project"
           command: "mkdir -p $GOPATH/src/github.com/Emyrk"
+          env:
+            GOPATH: /home/coder/go
         - name: "Clone Git Project"
           command: "git@github.com:Emyrk/test.git"
           continue-on-error: true
+          env:
+            GOPATH: /home/coder/go
           
   dev-urls:
     value:
