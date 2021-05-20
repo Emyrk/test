@@ -9,12 +9,12 @@ workspace:
         value: ubuntu
       container-based-vm: 
         value: true
-      kube-cpu: 
+      cpu: 
         value: 2
-      kube-memory: 
-        value: 2Gi
-      kube-disk: 
-        value: 15Gi
+      memory: 
+        value: 2
+      disk: 
+        value: 15
       gpuCount: 
         value: 0
       labels:
