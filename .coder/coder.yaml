@@ -35,6 +35,12 @@ workspace:
             GOPATH: /home/coder/go
         - name: "Easy ls"
           command: ls
+        - name: "Mkdir path to git project"
+          command: "mkdir -p $GOPATH/src/github.com/Emyrk"
+        - name: "Clone Git Project"
+          command: "git@github.com:Emyrk/test.git"
+          continue-on-error: true
+          
   dev-urls:
     value:
       - name: MyWebsite
