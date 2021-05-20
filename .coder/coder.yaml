@@ -6,7 +6,7 @@ workspace:
   specs:
     kubernetes:
       image: 
-        value: ubuntu
+        value: codercom/enterprise-base
       container-based-vm: 
         value: true
       cpu: 
