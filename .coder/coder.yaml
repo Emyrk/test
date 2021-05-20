@@ -24,15 +24,6 @@ workspace:
   configure:
     start:
       value:
-        - name: "install curl"
-          command: |
-            ls
-        - name: "install Go binary"
-          command: "go install"
-          directory: /home/coder/go/src/github.com/my-project
-          shell: "bash"
-          env:
-            GOPATH: /home/coder/go
         - name: "Easy ls"
           command: ls
         - name: "Mkdir path to git project"
