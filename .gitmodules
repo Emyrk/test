@@ -1,0 +1,3 @@
+[submodule "trivy"]
+	path = trivy
+	url = git@github.com:Emyrk/trivy.git
